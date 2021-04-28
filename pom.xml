@@ -60,5 +60,6 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/gilbertttsubay/sfg-pet-clinic.git</developerConnection>
+    <tag>sfg-pet-clinic-1.0.3</tag>
   </scm>
 </project>
