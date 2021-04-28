@@ -59,6 +59,6 @@
 	</build>
 
 	<scm>
-		<developerConnection>scm:git:git@github.com:gilbertttsubay/sfg-pet-clinic.git</developerConnection>
+		<developerConnection>scm:git:https://github.com/gilbertttsubay/sfg-pet-clinic.git</developerConnection>
   </scm>
 </project>
