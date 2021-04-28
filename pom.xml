@@ -52,8 +52,6 @@
 					<goals>install</goals>
 <!--					<tagBase>https://svn.somedomain/project/tags</tagBase>-->
 <!--					<autoVersionSubmodules>true</autoVersionSubmodules>-->
-					<localCheckout>true</localCheckout>
-					<pushChanges>false</pushChanges>
 				</configuration>
 			</plugin>
 		</plugins>
