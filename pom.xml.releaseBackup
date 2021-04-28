@@ -49,7 +49,7 @@
 <!--					<providerImplementations>-->
 <!--						<svn>javasvn</svn>-->
 <!--					</providerImplementations>-->
-					<goals>deploy</goals>
+					<goals>install</goals>
 <!--					<tagBase>https://svn.somedomain/project/tags</tagBase>-->
 <!--					<autoVersionSubmodules>true</autoVersionSubmodules>-->
 				</configuration>
@@ -60,6 +60,5 @@
 
 	<scm>
 		<developerConnection>scm:git:git@github.com:gilbertttsubay/sfg-pet-clinic.git</developerConnection>
-	  <tag>sfg-pet-clinic-0.0.1</tag>
   </scm>
 </project>
