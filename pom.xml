@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<packaging>pom</packaging>
 	<modules>
@@ -11,11 +10,11 @@
 		<groupId>org.springframework.boot</groupId>
 		<artifactId>spring-boot-starter-parent</artifactId>
 		<version>2.4.5</version>
-		<relativePath/> <!-- lookup parent from repository -->
+		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
 	<groupId>guru.guru.springframwork</groupId>
 	<artifactId>sfg-pet-clinic</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>1.0.3-SNAPSHOT</version>
 	<name>sfg-pet-clinic</name>
 	<description>Spring training using Pet Clinic Theme</description>
 	<properties>
@@ -24,19 +23,35 @@
 
 
 
+
 	<build>
 		<pluginManagement>
 		<plugins>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
-				<artifactId>spring-boot-starter-web</artifactId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
 			</plugin>
 			<plugin>
+				<dependencies>
+					<dependency>
+						<groupId>com.google.code.maven-scm-provider-svnjava</groupId>
+						<artifactId>maven-scm-provider-svnjava</artifactId>
+						<version>2.0.6</version>
+					</dependency>
+				</dependencies>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-release-plugin</artifactId>
-				<version>3.0.0-M1</version>
 				<configuration>
-					<goals>install</goals>
+					<checkModificationExcludes>
+						<checkModificationExclude>pom.xml</checkModificationExclude>
+						<checkModificationExclude>**</checkModificationExclude>
+					</checkModificationExcludes>
+<!--					<providerImplementations>-->
+<!--						<svn>javasvn</svn>-->
+<!--					</providerImplementations>-->
+					<goals>deploy</goals>
+<!--					<tagBase>https://svn.somedomain/project/tags</tagBase>-->
+<!--					<autoVersionSubmodules>true</autoVersionSubmodules>-->
 				</configuration>
 			</plugin>
 		</plugins>
@@ -44,6 +59,7 @@
 	</build>
 
 	<scm>
-		<developerConnection></developerConnection>
-	</scm>
+		<developerConnection>scm:git:git@github.com:gilbertttsubay/sfg-pet-clinic.git</developerConnection>
+	  <tag>sfg-pet-clinic-1.0.3</tag>
+  </scm>
 </project>
