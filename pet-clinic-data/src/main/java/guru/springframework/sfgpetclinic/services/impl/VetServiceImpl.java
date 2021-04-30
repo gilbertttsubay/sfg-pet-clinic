@@ -6,18 +6,29 @@ import guru.springframework.sfgpetclinic.services.VetService;
 import java.util.Set;
 
 public class VetServiceImpl implements VetService {
+
     @Override
-    public Vet findById(Long id) {
+    public Set<Vet> findAll() {
         return null;
     }
 
     @Override
-    public Vet save(Vet vet) {
+    public Vet findById(Long aLong) {
         return null;
     }
 
     @Override
-    public Set<Vet> findAllVet() {
+    public Vet save(Vet object) {
         return null;
+    }
+
+    @Override
+    public void deleteMethod(Vet object) {
+
+    }
+
+    @Override
+    public void deleteById(Long aLong) {
+
     }
 }
